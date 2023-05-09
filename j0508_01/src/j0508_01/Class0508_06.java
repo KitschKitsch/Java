@@ -12,7 +12,7 @@ public class Class0508_06 {
 		// 문자열 - String
 		
 		float f = 1.6f;
-		int i = (int)f; // 강제 형 변환 1.6 => 1
+		int i = (int)f; // 강제 형 변환 1.6 => 1 // 큰 놈은 작은 놈에 잘안들어감;
 		System.out.println(i);
 		
 		int num = 10;
@@ -26,9 +26,8 @@ public class Class0508_06 {
 		System.out.println(n);
 		
 		int n2 = 65+32; // ASCII 97 = a
-		char ch2 = (char)n2;
-		System.out.println(ch2);
-		
+		char ch2 = (char)n2; // 큰 놈은 작은 놈에 잘안들어감;
+		System.out.println(ch2);	
 	}
 
 }
