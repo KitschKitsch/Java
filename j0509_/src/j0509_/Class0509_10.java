@@ -12,7 +12,7 @@ public class Class0509_10 {
 		*/
 		
 		
-		// double num = 564.124586 소수점 3자리 절사, 2자리까지만 출력
+		// double num = 564.124586 소수점 3자리부터 절사, 2자리까지만 출력
 		double num = 564.124586;
 		double result = (int)(num*100)/100.0;
 		System.out.println(result);
