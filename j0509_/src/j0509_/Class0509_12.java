@@ -14,7 +14,6 @@ public class Class0509_12 {
 		
 		String result = (ch>='A' && ch<='Z')||(ch>='a' && ch<='z')? "영문자입니다." : "영문자가 아닙니다.";
 		System.out.println(result);
-
 	}
 
 }
