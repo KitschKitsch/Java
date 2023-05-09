@@ -33,9 +33,7 @@ public class Class0508_01 {
 		
 		// 문자열 - Class일때 대문자 표현
 		String str1 = new String("abc");
-		
 		String str2 = "abc"; // 기본형 타입으로 선언 可
-		
 		char str3 = ' '; // 홑따옴표, 공백 있어야 함
 		String str4 = ""; // 쌍따옴표, 공백 없어도 됨
 		
