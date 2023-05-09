@@ -6,8 +6,8 @@ public class Class0509_06 {
 
 	public static void main(String[] args) {
 		int num = 5;
-		// int result = ++num; // num을 증가, result에 대입
-		int result = num++; // result에 대입, num을 증가
+		// int result = ++num; // num을 증가 -> result에 대입
+		int result = num++; // result에 대입 -> num을 증가
 		System.out.println(result);
 		
 		// 삼항식 (조건)? True : False
@@ -34,9 +34,6 @@ public class Class0509_06 {
 		input = scan.nextInt();
 		int result2 = (input > 0)? -input : -input;
 		System.out.println("결과값: " + result2);
-		
-		
-
 	}
 
 }
