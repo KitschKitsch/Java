@@ -32,7 +32,6 @@ public class Class0509_03 {
 		System.out.println("이름 \t 국어 \t 영어 \t 수학 \t 합계 \t 평균");
 		System.out.println("==================================================");
 		System.out.printf("%s \t %f \t %d \t %d \t %f \t %.2f \n" , name, kor, eng, math, total, avg);
-
 	}
 
 }
