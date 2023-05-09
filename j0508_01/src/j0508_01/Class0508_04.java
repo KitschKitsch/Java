@@ -6,10 +6,9 @@ public class Class0508_04 {
 		long num = 2L;
 		long num2 = 0L;
 		char ch = 'A';
-	 // char ch2 = 'AB';
+		// char ch2 = 'AB';
 		char ch3 = ' ';
 		String str1 = "";
-		
 		String str2 = "a"+"b"; // "ab" 출력
 		System.out.println(str2);
 		
