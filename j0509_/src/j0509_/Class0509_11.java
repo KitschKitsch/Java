@@ -43,8 +43,6 @@ public class Class0509_11 {
 		double result = Math.ceil(input*1000)/1000.0;
 		System.out.println(result);
 		
-		
-		
 	}	
 		
 }		
