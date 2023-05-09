@@ -17,7 +17,6 @@ public class Class0509_07 {
 		// 3. 삼항식 조건
 		String result = (input%2 == 0)? "짝수입니다." : "홀수입니다.";
 		System.out.println(result);
-
 	}
 
 }
