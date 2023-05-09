@@ -20,7 +20,6 @@ public class Class0509_11 {
 		System.out.println(result); // 3.8
 		
 		
-		
 		// 소수점 5자리를 입력받아 3째자리에서 반올림해서 출력하시오.
 		double input = 0.0;
 		
@@ -42,9 +41,6 @@ public class Class0509_11 {
 		
 		double result = Math.ceil(input*1000)/1000.0;
 		System.out.println(result);
-		
-		
-		
 	}	
 		
 }		
