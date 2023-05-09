@@ -9,8 +9,9 @@ public class Class0509_01 {
 		// 정수형 - byte, short, int, long
 		// 실수형 - float, double
 		// 문자열(객체) - String
-		char ch = ' '; // A = 65, a = 97, 0 = 48
-		int num = (int)3.14;
+		
+		char ch = ' '; // ASCII: A = 65, a = 97, 0 = 48
+		int num = (int)3.14; // 3.14 강제형변환 => 3
 		// Ctrl + D : 한 줄 삭제
 		int num1 = 1, num2 = 2, num3 = 3, num4 = 4, num5 = 5;
 		int num6 = 6, num7 = 7, num8 = 8, num9 = 9, num10 = 10;
@@ -22,6 +23,7 @@ public class Class0509_01 {
 		System.out.println(num-num2);
 		System.out.println(num*num2);
 		System.out.println(num/(double)num2);
+		
 		System.out.println(7+5);
 		System.out.println(7-5);
 		System.out.println(7*5);
