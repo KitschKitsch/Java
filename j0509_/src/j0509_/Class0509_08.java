@@ -3,13 +3,16 @@ package j0509_;
 import java.util.Scanner;
 
 public class Class0509_08 {
+	
 	public static void main(String[] args) {
 		/*
 		// 1.변수선언 2.입력 3.출력
 		int input = 0;
+		
 		Scanner scan = new Scanner(System.in);
 		System.out.println("숫자를 입력하세요.");
 		input = scan.nextInt();
+		
 		String result = (input%2==0)? "짝수입니다.":"홀수입니다.";
 		System.out.println(result);
 				
@@ -57,8 +60,5 @@ public class Class0509_08 {
 		// int c = a*b; // 오버플로우..!
 		long c = (long)a * b;
 		System.out.println(c);
-		
-		
-		
 	}
 }
