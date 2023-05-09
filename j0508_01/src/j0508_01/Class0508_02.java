@@ -1,6 +1,6 @@
-package j0508_home;
+package j0508;
 
-public class Class0508_02_home {
+public class Class0508_02 {
 
 	public static void main(String[] args) {
 		
