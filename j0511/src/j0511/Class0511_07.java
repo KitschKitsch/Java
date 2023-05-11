@@ -14,6 +14,7 @@ public class Class0511_07 {
 		for (int i=0; i<num.length; i++) { // 0~4. Index Out Of Bounds 에러 조심!
 			System.out.println(num[i]);
 		}
+		System.out.println();
 		
 		
 		// 배열 100개를 만들고 1~100까지 숫자를 입력
@@ -22,6 +23,7 @@ public class Class0511_07 {
 			num2[i] = i+1;
 			System.out.println(num2[i]);
 		}
+		System.out.println();
 
 		
 		// 10개의 배열을 만들고 랜덤숫자 1~10까지 출력하시오.
@@ -30,6 +32,7 @@ public class Class0511_07 {
 			num3[i] = (int)(Math.random()*10)+1;
 			System.out.println(num3[i]);
 		}
+		System.out.println();
 	}
 
 }
