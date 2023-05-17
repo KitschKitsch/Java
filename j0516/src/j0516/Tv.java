@@ -1,16 +1,16 @@
 package j0516;
 
-//클래스=설계도: 첫글자 대문자!
 public class Tv {
-	// 변수 3개
-	String color;// 클래스 바로 아래 선언된 변수는 알아서 기본값!
-	boolean power;// false
-	int channel;// 0
-	int volume;// 0
+	
+	// 변수
+	String color;
+	boolean power;
+	int channel;
+	int volume;
 
-	// 메소드 3개
+	//메소드
 	void power() {
-		power = !power;
+		power = ! power;
 	}
 
 	void channelUp() {
@@ -31,6 +31,7 @@ public class Tv {
 
 	void volumeUp() {
 		if (volume > 14) {
+			System.out.println("최대 볼륨입니다.");
 			volume = 15;
 			return;
 		}
@@ -39,8 +40,9 @@ public class Tv {
 
 	void volumeDown() {
 		if (volume < 1) {
+			System.out.println("최소 볼륨입니다.");
 			volume = 0;
-			return;//void 메소드 탈출~
+			return;
 		}
 		volume--;
 	}
