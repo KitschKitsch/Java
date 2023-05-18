@@ -19,7 +19,7 @@ public class StuMain {
 
 		while (true) {
 			// 화면출력 메소드 호출
-			choice = stuScreen();
+			choice = stuScreen();// 매개변수 없어도 돌아가는 메소드임!
 
 			switch (choice) {
 
