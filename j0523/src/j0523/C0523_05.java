@@ -1,7 +1,5 @@
 package j0523;
 
-import java.util.Scanner;
-
 public class C0523_05 {
 
 	public static void main(String[] args) {

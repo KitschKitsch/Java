@@ -9,7 +9,7 @@ public class C0522_11 {
 		// Point center = new Point(0,0) => x=0, y=0;
 		// r=100;
 
-		// Point cente 객체선언후!
+		// Point center 객체선언후!
 		Point center = new Point(150, 150);
 		Circle c2 = new Circle(center, 50);
 		// c2 변수: x=150, y=150, r=50
