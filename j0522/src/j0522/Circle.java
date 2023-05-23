@@ -14,9 +14,5 @@ public class Circle extends Shape {// Shape 클래스 상속받음..!
 		this.center = center;// 인스턴스변수에대입
 		this.r = r;
 	}
-	
-	void draw() {
-//		System.out.printf();
-	}
 
 }

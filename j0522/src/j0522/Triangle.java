@@ -2,7 +2,10 @@ package j0522;
 
 public class Triangle extends Shape {// Shape 클래스 상속받음
 	Point[] p;// 인스턴스변수: 객체선언후 참조변수명.변수명
-
+	
+	Triangle() {// 기본생성자
+	}
+	
 	Triangle(Point[] p) {// 매개변수생성자
 		this.p = p;
 	}
