@@ -11,7 +11,7 @@ public class C0523_01 {
 			System.out.printf("%s%d \n", d.c[i].kind, d.c[i].number);
 		}
 
-//		// 구구단
+//		// 구구단 22222
 //		for (int i = 1; i < 10; i++) {
 //			for (int j = 1; j < 10; j++) {
 //				System.out.print(j + "*" + i + "=" + j * i + "\t");
