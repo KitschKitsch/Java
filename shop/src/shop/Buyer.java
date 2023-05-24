@@ -29,7 +29,6 @@ public class Buyer {
 			System.out.println("잔액부족!");
 			return;
 		}
-
 		money -= p.price;
 		bonusPoint += p.bonusPoint;
 		System.out.println(p);
@@ -40,7 +39,10 @@ public class Buyer {
 	void buyList() {
 		System.out.print("구매목록: ");
 		for (int i = 0; i < list.size(); i++) {
-			list.get(i);
+			if (i == 0)
+				System.out.print(list.get(i).productName);
+			else
+				System.out.print(", " + list.get(i).productName);
 		}
 	}
 

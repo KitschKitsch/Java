@@ -18,6 +18,7 @@ public class StuMain {
 		int math = 0;// "
 
 		ArrayList<Student> list = new ArrayList<>();
+		// <Student> 객체인것만 들어갈 수 있음!!
 		// Student[] s = new Student[10];// 객체배열선언(객체선언X): 공간만들기
 		// s[0] = new Student(); 객체선언
 
@@ -56,7 +57,7 @@ public class StuMain {
 				chk = 0;// 검색초기화
 
 				for (int i = 0; i < list.size(); i++) {
-					Student s = list.get(i);
+					Student s = list.get(i);// 새롭게 선언!
 					if (s.getName().equals(searchName)) {
 						System.out.println("[ 검색완료 ]");
 						System.out.println("수정할 과목 선택>> ");
@@ -116,7 +117,7 @@ public class StuMain {
 		String name = "";
 		int kor = 0, eng = 0, math = 0;
 
-		for (int i = list.size();; i++) {
+		for (int i = list.size();; i++) {// count 무쓸모...
 			System.out.println((i + 1) + "번째 학생 이름을 입력하세요.(0:이전)>> ");
 			name = scan.next();
 
@@ -146,9 +147,9 @@ public class StuMain {
 		System.out.println("------------------------------------------------------------");
 
 		// 성적출력
-		for (int i = 0; i < list.size(); i++) {
+		for (int i = 0; i < list.size(); i++) {// count 무쓸모
 			// 학번,이름,국,영,수,합계,평균,등수
-			Student s = list.get(i);
+			Student s = list.get(i);// 새롭게 선언!
 			System.out.printf("%s\t %s\t %d\t %d\t %d\t %d\t %.2f\t %d\t \n", s.getStuNo(), s.getName(), s.getKor(),
 					s.getEng(), s.getMath(), s.getTotal(), s.getAvg(), s.getRank());
 		}
