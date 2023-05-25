@@ -28,7 +28,7 @@ public class StuProcess {
 			list.add(new Student(name, kor, eng, math));
 
 			// list.size() = 1
-			// list.get(list.size() - 1).getStuNo();// 0번자리에 있는 학생
+			// list.get(list.size() - 1).getStuNo();// x번자리에 있는 학생의 학번
 			System.out.printf("%s(%d)", name, list.get(list.size() - 1).getStuNo());
 			System.out.print("(이)가 입력되었습니다.\n");
 			System.out.println();

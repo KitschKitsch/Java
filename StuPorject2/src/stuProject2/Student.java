@@ -32,6 +32,7 @@ public class Student {
 	private double avg;
 	private int rank;
 
+	// 4)get&set
 	public int getStuNo() {
 		return stuNo;
 	}

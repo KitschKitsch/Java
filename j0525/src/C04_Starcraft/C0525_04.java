@@ -5,12 +5,12 @@ public class C0525_04 {
 	public static void main(String[] args) {
 
 		Tank t1 = new Tank();
-		Marine m1 = new Marine();
 		Tank t2 = new Tank();
-		Marine m2 = new Marine();
-		Scv s1 = new Scv();
 		Vulture v1 = new Vulture();
-
+		Scv s1 = new Scv();
+		Marine m1 = new Marine();
+		Medic m2 = new Medic();
+		
 		t1.hitPoint -= 10;
 		t1.hitPoint -= 10;
 		System.out.println("수리전: " + t1.hitPoint);
@@ -23,10 +23,10 @@ public class C0525_04 {
 		s1.repair(v1);
 		System.out.println("수리후: " + v1.hitPoint);
 
-//		m2.hitPoint -= 10;
-//		m2.hitPoint -= 10;
-//		m2.hitPoint -= 10;
-//		s1.repair(m2);
+		m1.hitPoint -= 10;
+		System.out.println("치료전: " + m1.hitPoint);
+		m2.repair(m1);
+		System.out.println("치료후: " + m1.hitPoint);
 
 	}
 
