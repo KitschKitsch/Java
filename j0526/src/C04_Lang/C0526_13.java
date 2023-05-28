@@ -16,12 +16,12 @@ public class C0526_13 {
 		String strRandom = String.format("%05d", random2);// 00000~99999까지
 
 		while (true) {
-			System.out.println(random + ", " + strRandom);// 정답
+			System.out.println("당첨번호: " + random + "조" + strRandom);// 정답
 			System.out.println("조와 5자리 숫자를 입력하세요.(예: 1조12587)>> ");
 			String strNum = scan.next();
 
-			int myNum = Integer.parseInt(strNum.substring(0, 0 + 1));// 문자열 추출 후 int로 형변환해서 저장
-			String myNum2 = strNum.substring(2);
+			int myNum = Integer.parseInt(strNum.substring(0, 0 + 1));// 0번자리만 문자열 추출 후 int로 형변환해서 저장
+			String myNum2 = strNum.substring(2);// 2번자리부터 끝까지
 
 			System.out.println(myNum + ", " + myNum2);// 비교할숫자
 
@@ -36,6 +36,7 @@ public class C0526_13 {
 			} else {
 				System.out.println("번호: 💣꽝!");
 			}
+
 		}
 
 	}

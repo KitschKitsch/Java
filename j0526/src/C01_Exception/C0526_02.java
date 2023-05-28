@@ -7,14 +7,14 @@ public class C0526_02 {
 
 	public static void main(String[] args) {
 
-//		File dir = new File("c:/bbb");
-//		dir.mkdirs();// 폴더생성 메소드
-//		System.out.println("폴더 생성");
-//		
+		File dir = new File("c:/bbb");
+		dir.mkdirs();// 폴더생성 메소드
+		System.out.println("폴더 생성");
+
 //		File f = new File("c:/bbb/test.txt");
 //		try {
 //			f.createNewFile();
-//		} catch (IOException e) {
+//		} catch (Exception e) {
 //			e.printStackTrace();
 //		}
 //		
@@ -23,7 +23,7 @@ public class C0526_02 {
 		FileWriter fw = null;
 		String str = "";
 		try {
-			fw = new FileWriter("c:/bbb/test.txt");
+			fw = new FileWriter("c:/bbb/test.txt");// 글을 쓸 수 있는 파일 객체선언
 			for (int i = 0; i < 10; i++) {
 				str = str + "글자 저장 \r\n";// \r제일 마지막에서 \n줄바꿈
 			}

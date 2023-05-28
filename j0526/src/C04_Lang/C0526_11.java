@@ -12,10 +12,10 @@ public class C0526_11 {
 		String test = "abcdefghijklmn";
 		String lotto = "1조198756";
 
-		String result1 = lotto.substring(2);
+		String result1 = lotto.substring(2);// 2번자리부터 끝까지
 		System.out.println("lotto :" + result1);
 
-		String result2 = test.substring(3, 5 + 1);
+		String result2 = test.substring(3, 5 + 1);// 3번자리부터 5번자리까지
 		System.out.println("test :" + result2);
 
 		String result3 = str2.substring(36);
