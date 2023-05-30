@@ -31,7 +31,7 @@ public class C0526_13 {
 				System.out.println("조: 💣꽝!");
 			}
 
-			if (myNum2.equals(strRandom)) {// 번호 비교
+			if (myNum2.contains(strRandom)) {// 번호 비교
 				System.out.println("번호: 🎊당첨!");
 			} else {
 				System.out.println("번호: 💣꽝!");
