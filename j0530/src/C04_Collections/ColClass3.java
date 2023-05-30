@@ -6,7 +6,7 @@ public class ColClass3 {
 
 	// list를 main메소드에 전달
 
-	ArrayList<Student> execute3() {
+	ArrayList<Student> execute3() {// 리턴타입이 ArrayList
 
 		ArrayList<Student> list = new ArrayList<>();
 		list.add(new Student(1, "홍길동", 100, 100, 99));

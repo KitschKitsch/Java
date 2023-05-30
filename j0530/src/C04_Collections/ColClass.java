@@ -7,7 +7,7 @@ import java.util.Map;
 public class ColClass {
 
 	// list, nowPage, startRow, endRow를 담은 Map을 전송해주는 메소드
-	Map<String, Object> execute() {
+	Map<String, Object> execute() {// 리턴타입이 Map
 		Map<String, Object> map = new HashMap<>();
 
 		ArrayList<Student> list = new ArrayList<>();

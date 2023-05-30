@@ -19,9 +19,9 @@ public class C0530_09 {
 		System.out.println("----------");
 
 		// int 메소드가 있는 객체선언
-		ColClass2 c2 = new ColClass2();// 딱맞는 공간 만들고
-		int nowPage = 0;// 공간에 대입하기
-		nowPage = c2.execute2();
+		ColClass2 c2 = new ColClass2();
+		int nowPage = 0;// 딱맞는 공간 만들고
+		nowPage = c2.execute2();// 공간에 대입하기
 		System.out.println(nowPage);
 		System.out.println("----------");
 
