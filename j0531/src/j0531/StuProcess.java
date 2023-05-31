@@ -19,7 +19,7 @@ public class StuProcess {
 
 	// 1:학생성적입력
 	// 메소드: 리턴타입+메소드명+(매개변수)
-	Map<String, Object> stuInput(List<Student> list, int stuCount) {// 리턴타입이 Map
+	Map<String, Object> stuInput(List<Student> list, int stuCount) {// 리턴타입이 Map: list와 count 둘다 반환할꺼라소
 		while (true) {
 			System.out.println("[ 학생성적 입력 ]");
 			System.out.print(stuCount + "번째 이름(0:이전)>> ");
@@ -52,7 +52,7 @@ public class StuProcess {
 	// 2:학생성적출력
 	// 리턴타입 메소드명
 	List<Student> stuOutput(List<Student> list) {// 리턴타입이 List
-
+		// 매개변수 대신 List<Student> list = new ArrayList(); 객체선언해버리면 출력이 안됨;;;
 		String[] title = { "학번", "이름", "국어", "영어", "수학", "합계", "평균", "등수" };
 		System.out.println("[ 학생성적 출력 ]");
 		System.out.printf("%s\t %s\t %s\t %S\t %s\t %s\t %s\t %s\n", title[0], title[1], title[2], title[3], title[4],
@@ -70,7 +70,7 @@ public class StuProcess {
 	// 8:파일 불러오기
 	// 리턴타입 메소드명
 	List<Student> stuRead() {// List가 리턴타입
-		List<Student> list = new ArrayList<>();
+		List<Student> list = new ArrayList<>();// 매개변수에 list가 들어가면 호출할때마다 파일을 계속 가져와 덧붙임;;;
 
 		// 버퍼리더로 파일 읽어오기
 		BufferedReader br = null;
