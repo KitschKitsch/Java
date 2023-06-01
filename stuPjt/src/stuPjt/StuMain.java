@@ -29,10 +29,13 @@ public class StuMain {
 			case 1:
 				// 1:성적입력 메소드 호출
 				sp.stuInput();
+				break;
 
-				break;
 			case 2:
+				// 2:성적출력 메소드 호출
+				sp.stuOuput();
 				break;
+
 			case 3:
 				break;
 			case 4:

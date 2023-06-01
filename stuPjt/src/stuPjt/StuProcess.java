@@ -41,7 +41,7 @@ public class StuProcess {
 			math = scan.nextInt();
 
 			// 입력시간
-			Date today = new Date();// 날짜객체선언
+			Date today = new Date();// '오늘'날짜객체선언
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");// 날짜형식지정
 			createDate = sdf.format(today);// 날짜형식에 넣기
 
@@ -51,6 +51,23 @@ public class StuProcess {
 		} // while
 		return list;
 	}// stuInput메소드
+
+	// 2:성적출력 메소드
+	void stuOuput() {
+		System.out.println("[ 학생성적 출력 ]");
+		String[] title = { "학번", "이름", "국어", "영어", "수학", "합계", "평균", "등수", "입력일", "수정일" };
+		System.out.printf("%s\t %s\t %s\t %s\t %s\t %s\t %s\t %s\t %s\t %s\n", title[0], title[1], title[2], title[3],
+				title[4], title[5], title[6], title[7], title[8], title[9]);
+		System.out.println("----------------------------------------------------------------------");
+		for (int i = 0; i < list.size(); i++) {
+			Student s = list.get(i);
+			System.out.printf("%d\t %s\t %d\t %d\t %d\t %d\t %.2f\t %d\t %s\t %s\n", s.getStuNo(), s.getName(),
+					s.getKor(), s.getEng(), s.getMath(), s.getTotal(), s.getAvg(), s.getRank(), s.getCreateDate(),
+					s.getUpdateDate());
+		}
+		System.out.println("[ 출력 완료 ]");
+		System.out.println();
+	}
 
 	// 8:파일읽어오기 메소드
 	ArrayList<Student> stuRead() throws Exception {
