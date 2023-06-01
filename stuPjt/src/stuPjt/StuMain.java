@@ -6,12 +6,13 @@ import java.util.Scanner;
 
 public class StuMain {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 
 		// 1)객체&변수선언
 		Scanner scan = new Scanner(System.in);
 		StuProcess sp = new StuProcess();// StuProcess 객체선언
 		ArrayList<Student> list = new ArrayList<>();// 데이터 저장하는 컬렉션
+		list = sp.stuRead();// 8:파일읽어오기 메소드 호출 ~ 동기화됨!
 		int choice = 0;// 입력변수
 
 		while (true) {
@@ -27,10 +28,7 @@ public class StuMain {
 			switch (choice) {
 			case 1:
 				// 1:성적입력 메소드 호출
-				list = sp.stuInput();
-				for (int i = 0; i < list.size(); i++) {
-					System.out.println(list.get(i).getStuNo() + " " + list.get(i).getName());
-				}
+				sp.stuInput();
 
 				break;
 			case 2:
@@ -45,7 +43,11 @@ public class StuMain {
 				break;
 			case 7:
 				break;
+
 			case 8:
+				// 8:파일읽어오기 메소드 호출
+				list = sp.stuRead();
+
 				break;
 			case 9:
 				break;
