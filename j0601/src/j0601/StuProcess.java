@@ -89,7 +89,6 @@ public class StuProcess {
 				String data = br.readLine();// 한줄씩 읽어온 데이터 // data = "1,홍길동,100,100,99";
 				if (data == null)// 데이터 없으면
 					break;// 그만
-				// System.out.println(data);// 아니면 데이터 출력
 
 				String[] dataArr = data.split(",");// 쉼표단위로 분리해서 배열에 저장
 				stuNo = Integer.parseInt(dataArr[0]);// String -> Int로 형변환
